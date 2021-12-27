@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="To improve the response of momentum strategies to regime change, we introduce a novel approach, where we insert an online change-point detection (CPD) module into a Deep Momentum Network (DMN) pipeline, which uses an LSTM deep-learning architecture to simultaneously learn both trend estimation and position sizing. Our model is able to optimise the way in which it balances 1) a slow momentum strategy which exploits persisting trends, but does not overreact to localised price moves, and 2) a fast mean-reversion strategy regime by quickly flipping its position, then swapping it back again to exploit localised price moves." />
+  <meta name="description" content="Deep learning architectures, specifically Deep Momentum Networks (DMNs), have been found to be an effective approach to momentum and mean-reversion trading. However, some of the key challenges in recent years involve learning long-term dependencies, degradation of performance when considering returns net of transaction costs and adapting to new market regimes, notably during the SARS-CoV-2 crisis. Attention mechanisms, or Transformer-based architectures, are a solution to such challenges because they allow the network to focus on significant time steps in the past and longer-term patterns. We introduce the Momentum Transformer, an attention-based architecture which outperforms the benchmarks, and is inherently interpretable, providing us with greater insights into our deep learning trading strategy. Our model is an extension to the LSTM-based DMN, which directly outputs position sizing by optimising the network on a risk-adjusted performance metric, such as Sharpe ratio. We observe remarkable structure in the attention patterns, with significant peaks of importance at momentum turning points. The time series is thus segmented into regimes and the model tends to focus on previous time-steps in alike regimes. Through the addition of an interpretable variable selection network, we observe how CPD helps our model to move away from trading predominantly on daily returns data. We note that the model can intelligently switch between, and blend, classical strategies - basing its decision on patterns in the data." />
 
   
-  <link rel="alternate" hreflang="en-us" href="../../publication/slow-momentum-fast-reversion/" />
+  <link rel="alternate" hreflang="en-us" href="../../publication/momentum-transformer/" />
 
   
 
@@ -280,7 +280,7 @@
   <link rel="icon" type="image/png" href="../../media/icon_hu170f99c139b13a89807250a6252d74b3_28658_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="../../media/icon_hu170f99c139b13a89807250a6252d74b3_28658_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="../../publication/slow-momentum-fast-reversion/" />
+  <link rel="canonical" href="../../publication/momentum-transformer/" />
 
   
   
@@ -296,18 +296,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Kieran Wood" />
-  <meta property="og:url" content="/publication/slow-momentum-fast-reversion/" />
-  <meta property="og:title" content="Slow Momentum with Fast Reversion: A Trading Strategy Using Deep Learning and Changepoint Detection | Kieran Wood" />
-  <meta property="og:description" content="To improve the response of momentum strategies to regime change, we introduce a novel approach, where we insert an online change-point detection (CPD) module into a Deep Momentum Network (DMN) pipeline, which uses an LSTM deep-learning architecture to simultaneously learn both trend estimation and position sizing. Our model is able to optimise the way in which it balances 1) a slow momentum strategy which exploits persisting trends, but does not overreact to localised price moves, and 2) a fast mean-reversion strategy regime by quickly flipping its position, then swapping it back again to exploit localised price moves." /><meta property="og:image" content="/publication/slow-momentum-fast-reversion/featured.jpg" />
-    <meta property="twitter:image" content="/publication/slow-momentum-fast-reversion/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="/publication/momentum-transformer/" />
+  <meta property="og:title" content="Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture | Kieran Wood" />
+  <meta property="og:description" content="Deep learning architectures, specifically Deep Momentum Networks (DMNs), have been found to be an effective approach to momentum and mean-reversion trading. However, some of the key challenges in recent years involve learning long-term dependencies, degradation of performance when considering returns net of transaction costs and adapting to new market regimes, notably during the SARS-CoV-2 crisis. Attention mechanisms, or Transformer-based architectures, are a solution to such challenges because they allow the network to focus on significant time steps in the past and longer-term patterns. We introduce the Momentum Transformer, an attention-based architecture which outperforms the benchmarks, and is inherently interpretable, providing us with greater insights into our deep learning trading strategy. Our model is an extension to the LSTM-based DMN, which directly outputs position sizing by optimising the network on a risk-adjusted performance metric, such as Sharpe ratio. We observe remarkable structure in the attention patterns, with significant peaks of importance at momentum turning points. The time series is thus segmented into regimes and the model tends to focus on previous time-steps in alike regimes. Through the addition of an interpretable variable selection network, we observe how CPD helps our model to move away from trading predominantly on daily returns data. We note that the model can intelligently switch between, and blend, classical strategies - basing its decision on patterns in the data." /><meta property="og:image" content="/publication/momentum-transformer/featured.jpg" />
+    <meta property="twitter:image" content="/publication/momentum-transformer/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-05-28T00:00:00&#43;00:00"
+        content="2021-12-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-05-28T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-12-17T00:00:00&#43;00:00">
   
 
   
@@ -329,16 +329,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/publication/slow-momentum-fast-reversion/"
+    "@id": "/publication/momentum-transformer/"
   },
-  "headline": "Slow Momentum with Fast Reversion: A Trading Strategy Using Deep Learning and Changepoint Detection",
+  "headline": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
   
   "image": [
-    "/publication/slow-momentum-fast-reversion/featured.jpg"
+    "/publication/momentum-transformer/featured.jpg"
   ],
   
-  "datePublished": "2021-05-28T00:00:00Z",
-  "dateModified": "2021-05-28T00:00:00Z",
+  "datePublished": "2021-12-17T00:00:00Z",
+  "dateModified": "2021-12-17T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -353,7 +353,7 @@
       "url": "/media/icon_hu170f99c139b13a89807250a6252d74b3_28658_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "To improve the response of momentum strategies to regime change, we introduce a novel approach, where we insert an online change-point detection (CPD) module into a Deep Momentum Network (DMN) pipeline, which uses an LSTM deep-learning architecture to simultaneously learn both trend estimation and position sizing. Our model is able to optimise the way in which it balances 1) a slow momentum strategy which exploits persisting trends, but does not overreact to localised price moves, and 2) a fast mean-reversion strategy regime by quickly flipping its position, then swapping it back again to exploit localised price moves."
+  "description": "Deep learning architectures, specifically Deep Momentum Networks (DMNs), have been found to be an effective approach to momentum and mean-reversion trading. However, some of the key challenges in recent years involve learning long-term dependencies, degradation of performance when considering returns net of transaction costs and adapting to new market regimes, notably during the SARS-CoV-2 crisis. Attention mechanisms, or Transformer-based architectures, are a solution to such challenges because they allow the network to focus on significant time steps in the past and longer-term patterns. We introduce the Momentum Transformer, an attention-based architecture which outperforms the benchmarks, and is inherently interpretable, providing us with greater insights into our deep learning trading strategy. Our model is an extension to the LSTM-based DMN, which directly outputs position sizing by optimising the network on a risk-adjusted performance metric, such as Sharpe ratio. We observe remarkable structure in the attention patterns, with significant peaks of importance at momentum turning points. The time series is thus segmented into regimes and the model tends to focus on previous time-steps in alike regimes. Through the addition of an interpretable variable selection network, we observe how CPD helps our model to move away from trading predominantly on daily returns data. We note that the model can intelligently switch between, and blend, classical strategies - basing its decision on patterns in the data."
 }
 </script>
 
@@ -369,11 +369,11 @@
 
 
 
-  <title>Slow Momentum with Fast Reversion: A Trading Strategy Using Deep Learning and Changepoint Detection | Kieran Wood</title>
+  <title>Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture | Kieran Wood</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="696415cbba9d5a96dd3319f54005db66" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="eb88eedaee53099fa7ed67a8da488e36" >
 
   
   
@@ -744,7 +744,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Slow Momentum with Fast Reversion: A Trading Strategy Using Deep Learning and Changepoint Detection</h1>
+  <h1>Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture</h1>
 
   
 
@@ -762,6 +762,7 @@
 
   <span >
       Kieran Wood</span>, <span >
+      Sven Giegerich</span>, <span >
       Stephen Roberts</span>, <span >
       Stefan Zohren</span>
   </div>
@@ -774,7 +775,7 @@
     
       
     
-    May 2021
+    December 2021
   </span>
   
 
@@ -817,7 +818,7 @@
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/slow-momentum-fast-reversion/cite.bib">
+        data-filename="/publication/momentum-transformer/cite.bib">
   Cite
 </a>
 
@@ -833,10 +834,6 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.3905/jfds.2021.1.081" target="_blank" rel="noopener">
-  DOI
-</a>
-
 
   
   
@@ -849,7 +846,7 @@
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2105.13727.pdf" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2112.08534.pdf" target="_blank" rel="noopener">
     
     PDF
   </a>
@@ -863,8 +860,8 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 480px;">
   <div style="position: relative">
-    <img src="../../publication/slow-momentum-fast-reversion/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_2768543_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
-    <span class="article-header-caption">Image credit: <a href="https://www.pexels.com/photo/turned-on-monitor-displaying-frequency-graph-241544/"><strong>Pexels</strong></a></span>
+    <img src="../../publication/momentum-transformer/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_240282_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Image credit: <a href="https://www.pexels.com/photo/magnifying-glass-on-top-of-document-6801648/"><strong>Pexels</strong></a></span>
   </div>
 </div>
 
@@ -874,7 +871,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Momentum strategies are an important part of alternative investments and are at the heart of commodity trading advisors (CTAs). These strategies have, however, been found to have difficulties adjusting to rapid changes in market conditions, such as during the 2020 market crash. In particular, immediately after momentum turning points, where a trend reverses from an uptrend (downtrend) to a downtrend (uptrend), time-series momentum (TSMOM) strategies are prone to making bad bets. To improve the response to regime change, we introduce a novel approach, where we insert an online changepoint detection (CPD) module into a Deep Momentum Network (DMN) [1904.04912] pipeline, which uses an LSTM deep-learning architecture to simultaneously learn both trend estimation and position sizing. Furthermore, our model is able to optimise the way in which it balances 1) a slow momentum strategy which exploits persisting trends, but does not overreact to localised price moves, and 2) a fast mean-reversion strategy regime by quickly flipping its position, then swapping it back again to exploit localised price moves. Our CPD module outputs a changepoint location and severity score, allowing our model to learn to respond to varying degrees of disequilibrium, or smaller and more localised changepoints, in a data driven manner. Back-testing our model over the period 1995-2020, the addition of the CPD module leads to an improvement in Sharpe ratio of one-third. The module is especially beneficial in periods of significant nonstationarity, and in particular, over the most recent years tested (2015-2020) the performance boost is approximately two-thirds. This is interesting as traditional momentum strategies have been underperforming in this period.</p>
+    <p class="pub-abstract">Deep learning architectures, specifically Deep Momentum Networks (DMNs) [1904.04912], have been found to be an effective approach to momentum and mean-reversion trading. However, some of the key challenges in recent years involve learning long-term dependencies, degradation of performance when considering returns net of transaction costs and adapting to new market regimes, notably during the SARS-CoV-2 crisis. Attention mechanisms, or Transformer-based architectures, are a solution to such challenges because they allow the network to focus on significant time steps in the past and longer-term patterns. We introduce the Momentum Transformer, an attention-based architecture which outperforms the benchmarks, and is inherently interpretable, providing us with greater insights into our deep learning trading strategy. Our model is an extension to the LSTM-based DMN, which directly outputs position sizing by optimising the network on a risk-adjusted performance metric, such as Sharpe ratio. We find an attention-LSTM hybrid Decoder-Only Temporal Fusion Transformer (TFT) style architecture is the best performing model. In terms of interpretability, we observe remarkable structure in the attention patterns, with significant peaks of importance at momentum turning points. The time series is thus segmented into regimes and the model tends to focus on previous time-steps in alike regimes. We find changepoint detection (CPD) [2105.13727], another technique for responding to regime change, can complement multi-headed attention, especially when we run CPD at multiple timescales. Through the addition of an interpretable variable selection network, we observe how CPD helps our model to move away from trading predominantly on daily returns data. We note that the model can intelligently switch between, and blend, classical strategies - basing its decision on patterns in the data.</p>
     
 
     
@@ -885,8 +882,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="../../publication/#2">
-              Journal article
+            <a href="../../publication/#3">
+              Preprint
             </a>
           </div>
         </div>
@@ -896,18 +893,6 @@
     <div class="d-md-none space-below"></div>
     
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In the Journal of Financial Data Science</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
     
 
     <div class="space-below"></div>
@@ -946,7 +931,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=../../publication/slow-momentum-fast-reversion/&amp;text=Slow%20Momentum%20with%20Fast%20Reversion:%20A%20Trading%20Strategy%20Using%20Deep%20Learning%20and%20Changepoint%20Detection" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=../../publication/momentum-transformer/&amp;text=Trading%20with%20the%20Momentum%20Transformer:%20An%20Intelligent%20and%20Interpretable%20Architecture" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -959,7 +944,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/publication/slow-momentum-fast-reversion/&amp;t=Slow%20Momentum%20with%20Fast%20Reversion:%20A%20Trading%20Strategy%20Using%20Deep%20Learning%20and%20Changepoint%20Detection" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/publication/momentum-transformer/&amp;t=Trading%20with%20the%20Momentum%20Transformer:%20An%20Intelligent%20and%20Interpretable%20Architecture" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -972,7 +957,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Slow%20Momentum%20with%20Fast%20Reversion:%20A%20Trading%20Strategy%20Using%20Deep%20Learning%20and%20Changepoint%20Detection&amp;body=/publication/slow-momentum-fast-reversion/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Trading%20with%20the%20Momentum%20Transformer:%20An%20Intelligent%20and%20Interpretable%20Architecture&amp;body=/publication/momentum-transformer/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -985,7 +970,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=../../publication/slow-momentum-fast-reversion/&amp;title=Slow%20Momentum%20with%20Fast%20Reversion:%20A%20Trading%20Strategy%20Using%20Deep%20Learning%20and%20Changepoint%20Detection" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=../../publication/momentum-transformer/&amp;title=Trading%20with%20the%20Momentum%20Transformer:%20An%20Intelligent%20and%20Interpretable%20Architecture" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -998,7 +983,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Slow%20Momentum%20with%20Fast%20Reversion:%20A%20Trading%20Strategy%20Using%20Deep%20Learning%20and%20Changepoint%20Detection%20/publication/slow-momentum-fast-reversion/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Trading%20with%20the%20Momentum%20Transformer:%20An%20Intelligent%20and%20Interpretable%20Architecture%20/publication/momentum-transformer/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1011,7 +996,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=../../publication/slow-momentum-fast-reversion/&amp;title=Slow%20Momentum%20with%20Fast%20Reversion:%20A%20Trading%20Strategy%20Using%20Deep%20Learning%20and%20Changepoint%20Detection" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=../../publication/momentum-transformer/&amp;title=Trading%20with%20the%20Momentum%20Transformer:%20An%20Intelligent%20and%20Interpretable%20Architecture" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1126,6 +1111,12 @@
 
     </div>
   </div>
+
+
+  
+    
+
+
 
 
   
