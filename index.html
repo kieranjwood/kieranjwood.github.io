@@ -92,8 +92,6 @@
       
         
       
-        
-      
     
     
     
@@ -897,7 +895,7 @@
     <h1>Biography</h1>
 
     <div class="article-style">
-      <p>Kieran Wood is a DPhil student at the University of Oxford, where he is part of the Machine Learning Research Group and a member of the Oxford Man Institute of Quantitative Finance. His core research interests lie in using deep learning for time-series forecasting, with a focus on momentum trading. Kieran is supervised by Prof. Stephen Roberts and Prof. Stefan Zohren. Additionally, Kieran works at IQUW, a new data-driven insurance company, as Senior Pricing Analyst, focussing on Insurance Linked Securities (ILS) and Reinsurance. Previously, Kieran was at Guy Carpenter, as Vice President in Analytics Modernisation and Data Science, building quantitative tools.</p>
+      <p>Kieran Wood is a DPhil candidate at the University of Oxford, where he is part of the Machine Learning Research Group and a member of the Oxford Man Institute of Quantitative Finance. His core research interests lie in using deep learning for time-series forecasting, with a focus on momentum trading. Kieran is supervised by Prof. Stephen Roberts and Prof. Stefan Zohren. Additionally, Kieran works at IQUW, a new data-driven insurance company, as Portfolio Optimisation Lead, Portfolio Management. Previously, Kieran was at Guy Carpenter, as Vice President in Analytics Modernisation and Data Science.</p>
 <!-- Download CV -->
 <!-- 
   <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="./uploads/demo_resume.pdf" target="_blank">resumé</a>. -->
@@ -1048,6 +1046,21 @@
   
   
     <div class="card experience course">
+      <div class="card-body"><a href="https://arxiv.org/abs/2112.08534" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Trading with the Momentum Transformer</div></a><div class="card-subtitle my-0 article-metadata"><a href="https://arxiv.org/" target="_blank" rel="noopener">arXiv</a><span class="middot-divider"></span>
+
+              Jul 2022
+              
+            </div>
+
+        
+          <div class="card-text">An updated pre-print is now available.</div>
+        
+
+        
+      </div>
+    </div>
+  
+    <div class="card experience course">
       <div class="card-body"><a href="https://github.com/kieranjwood/trading-momentum-transformer" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Code Release</div></a><div class="card-subtitle my-0 article-metadata"><a href="https://github.com/kieranjwood" target="_blank" rel="noopener">GitHub</a><span class="middot-divider"></span>
 
               Jan 2022
@@ -1078,7 +1091,7 @@
     </div>
   
     <div class="card experience course">
-      <div class="card-body"><a href="https://jfds.pm-research.com/content/early/2021/12/09/jfds.2021.1.081" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Slow Momentum with Fast Reversion</div></a><div class="card-subtitle my-0 article-metadata"><a href="https://jfds.pm-research.com" target="_blank" rel="noopener">The Journal of Financial Data Science</a><span class="middot-divider"></span>
+      <div class="card-body"><a href="https://doi.org/10.3905/jfds.2021.1.081" target="_blank" rel="noopener"><div class="section-subheading card-title exp-title text-muted my-0">Slow Momentum with Fast Reversion</div></a><div class="card-subtitle my-0 article-metadata"><a href="https://jfds.pm-research.com" target="_blank" rel="noopener">The Journal of Financial Data Science</a><span class="middot-divider"></span>
 
               Dec 2021
               
@@ -1290,7 +1303,7 @@
   
   <a href="./publication/momentum-transformer/" class="summary-link">
     <div class="article-style">
-      <p>Deep learning architectures, specifically Deep Momentum Networks (DMNs), have been found to be an effective approach to momentum and mean-reversion trading. However, some of the key challenges in recent years involve learning long-term dependencies, degradation of performance when considering returns net of transaction costs and adapting to new market regimes, notably during the SARS-CoV-2 crisis. Attention mechanisms, or Transformer-based architectures, are a solution to such challenges because they allow the network to focus on significant time steps in the past and longer-term patterns. We introduce the Momentum Transformer, an attention-based architecture which outperforms the benchmarks, and is inherently interpretable, providing us with greater insights into our deep learning trading strategy. Our model is an extension to the LSTM-based DMN, which directly outputs position sizing by optimising the network on a risk-adjusted performance metric, such as Sharpe ratio. We observe remarkable structure in the attention patterns, with significant peaks of importance at momentum turning points. The time series is thus segmented into regimes and the model tends to focus on previous time-steps in alike regimes. Through the addition of an interpretable variable selection network, we observe how CPD helps our model to move away from trading predominantly on daily returns data. We note that the model can intelligently switch between, and blend, classical strategies - basing its decision on patterns in the data.</p>
+      <p>We introduce the Momentum Transformer, an attention-based deep learning architecture which outperforms benchmark momentum and mean-reversion trading strategies. Unlike state-of-the-art Long Short-Term Memory (LSTM) architectures, which are sequential in nature, the attention mechanism provides our architecture with a direct connection to all previous time-steps. Our architecture enables us to learn longer-term dependencies, improves performance when considering returns net of transaction costs and naturally adapts to new market regimes, such as during the SARS-CoV-2 crisis. The Momentum Transformer is inherently interpretable, providing us with greater insights into our deep learning momentum trading strategy, including how it blends different classical strategies and the past time-steps which are of the greatest significance to the model.</p>
     </div>
   </a>
   
@@ -1750,12 +1763,51 @@
       <div class="card">
         <div class="card-body">
 
+              <div class="section-subheading card-title exp-title text-muted my-0">Portfolio Optimisation Lead, Portfolio Management</div>
+              <div class="section-subheading card-title exp-company text-muted my-0">IQUW</div>
+              <div class="text-muted exp-meta">
+                Aug 2022 –
+                
+                  Present
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>London</span>
+                
+              </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+
               <div class="section-subheading card-title exp-title text-muted my-0">Senior Pricing Analyst, Insurance Linked Securities &amp; Reinsurance</div>
               <div class="section-subheading card-title exp-company text-muted my-0">IQUW</div>
               <div class="text-muted exp-meta">
                 Aug 2021 –
                 
-                  Present
+                  Aug 2022
                 
                 
                   <span class="middot-divider"></span>
@@ -1970,145 +2022,6 @@
 
     
       </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="skills" class="home-section wg-featurette  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-
-      
-
-
-<div class="row featurette">
-  
-  <div class="col-md-12 section-heading">
-    <h1>Skills</h1>
-    
-  </div>
-  
-
-  
-
-  
-  
-  
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><img src="./media/icons/python.svg" alt="python" class="svg-icon svg-baseline"></div>
-    
-    <div class="section-subheading">Python</div>
-    
-  </div>
-  
-  
-  
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><img src="./media/icons/apache-spark.svg" alt="apache-spark" class="svg-icon svg-baseline"></div>
-    
-    <div class="section-subheading">Apache Spark</div>
-    
-  </div>
-  
-  
-  
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><img src="./media/icons/postgres.svg" alt="postgres" class="svg-icon svg-baseline"></div>
-    
-    <div class="section-subheading">SQL</div>
-    
-  </div>
-  
-  
-  
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><img src="./media/icons/tensorflow.svg" alt="tensorflow" class="svg-icon svg-baseline"></div>
-    
-    <div class="section-subheading">TensorFlow</div>
-    
-  </div>
-  
-  
-  
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><img src="./media/icons/azure-databricks.svg" alt="azure-databricks" class="svg-icon svg-baseline"></div>
-    
-    <div class="section-subheading">Databricks</div>
-    
-  </div>
-  
-  
-  
-  
-  <div class="col-12 col-sm-4">
-    
-    <div class="featurette-icon"><img src="./media/icons/c-sharp.svg" alt="c-sharp" class="svg-icon svg-baseline"></div>
-    
-    <div class="section-subheading">C#</div>
-    
-  </div>
-  
-</div>
-
-
     
 
     </div>
